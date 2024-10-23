@@ -1,0 +1,11 @@
+
+# git ignore
+
+/node_modules/
+
+tsconfig.tsbuildinfo
+
+.~lock*
+*-error.log
+
+
