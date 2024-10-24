@@ -1,4 +1,4 @@
-import { Pathfinder } from '../../../../npm-modules/abstract-pathfinder'
+import { Pathfinder } from 'abstract-pathfinder'
 import { Piano1, Piano2 } from './instruments'
 import { setPathStr } from './Main'
 import { midiToFreq } from './util'
@@ -35,7 +35,7 @@ export const playChords = (gen: any) => {
 const finder = new Pathfinder<number>({
   getNeighbors: (n) => [0, 0, 0, 0].map(() => n + rand(-3, 3)),
   getHeuristic: (a, b) => 5 + Math.abs(a - b) + rand(0, 3),
-  getMovementCost: (a, b) => Math.abs(a - b) + rand(1, 2) + (inMajorScale(b) ? 1 : 2),
+  getMoveCost: (a, b) => Math.abs(a - b) + rand(1, 2) + (inMajorScale(b) ? 1 : 2),
 })
 console.log('finder')
 let note = 72
