@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       abstract-pathfinder:
-        specifier: link:../../npm-modules/abstract-pathfinder
-        version: link:../../npm-modules/abstract-pathfinder
+        specifier: github:fenomas/abstract-pathfinder
+        version: https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/a763ba4d54179782357060dc39f16e43e90fd9d8
       solid-js:
         specifier: ^1.8.11
         version: 1.9.3
@@ -569,6 +569,10 @@ packages:
 
   '@vitest/utils@1.6.0':
     resolution: {integrity: sha512-21cPiuGMoMZwiOHa2i4LXkMkMkCGzA+MVFV70jRwHo95dL4x/ts5GZhML1QWuy7yfp3WzK3lRvZi3JnXTYqrBw==}
+
+  abstract-pathfinder@https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/a763ba4d54179782357060dc39f16e43e90fd9d8:
+    resolution: {tarball: https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/a763ba4d54179782357060dc39f16e43e90fd9d8}
+    version: 0.1.0
 
   acorn-walk@8.3.4:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
@@ -1184,6 +1188,9 @@ packages:
   tr46@5.0.0:
     resolution: {integrity: sha512-tk2G5R2KRwBd+ZN0zaEXpmzdKyOYksXwywulIX95MBODjSzMIuQnQ3m8JxgbhnL1LeVo7lqQKsYa1O3Htl7K5g==}
     engines: {node: '>=18'}
+
+  ts-priority-queue@0.1.1:
+    resolution: {integrity: sha512-jNwbk4ItfTHVopnlQ/Z7UUlbF1TNsdXS2cb1W8kI6lm8UauIjs8CYSOEh1E/yrIEhl+HVFUMp60ma6fKuvBhBQ==}
 
   type-detect@4.1.0:
     resolution: {integrity: sha512-Acylog8/luQ8L7il+geoSxhEkazvkslg7PSNKOX59mbB9cOveP5aq9h74Y7YU8yDpJwetzQQrfIwtf4Wp4LKcw==}
@@ -1879,6 +1886,10 @@ snapshots:
       loupe: 2.3.7
       pretty-format: 29.7.0
 
+  abstract-pathfinder@https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/a763ba4d54179782357060dc39f16e43e90fd9d8:
+    dependencies:
+      ts-priority-queue: 0.1.1
+
   acorn-walk@8.3.4:
     dependencies:
       acorn: 8.13.0
@@ -2503,6 +2514,8 @@ snapshots:
   tr46@5.0.0:
     dependencies:
       punycode: 2.3.1
+
+  ts-priority-queue@0.1.1: {}
 
   type-detect@4.1.0: {}
 
