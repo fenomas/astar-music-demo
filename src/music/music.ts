@@ -8,7 +8,7 @@ let ct = 0
 const major = [0, 2, 4, 5, 7, 9, 11]
 const makeChord = (n = 0) => [n, n + 2, n + 4].map((n) => major[n % 7])
 const beatDur = 0.4
-const vel = 0.5
+const vel = 0.4
 const inMajorScale = (n = 0) => major.includes(n % 12)
 
 // fixed 1564 chords
