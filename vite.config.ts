@@ -7,7 +7,7 @@ import solidPlugin from 'vite-plugin-solid'
 
 export default defineConfig({
   root: 'src/',
-  base: '/',
+  base: '',
 
   build: {
     outDir: '../docs', // relative to root!
