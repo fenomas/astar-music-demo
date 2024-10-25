@@ -23,7 +23,7 @@
     "vitest": "^1.2.1"
   },
   "dependencies": {
-    "abstract-pathfinder": "github:fenomas/abstract-pathfinder",
+    "abstract-pathfinder": "^0.1.0",
     "solid-js": "^1.8.11",
     "wasgen": "^0.18.4"
   },

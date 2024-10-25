@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       abstract-pathfinder:
-        specifier: github:fenomas/abstract-pathfinder
-        version: https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/49c7d53d4fa332fbf4be7a0a605de47845061732
+        specifier: ^0.1.0
+        version: 0.1.0
       solid-js:
         specifier: ^1.8.11
         version: 1.9.3
@@ -570,9 +570,8 @@ packages:
   '@vitest/utils@1.6.0':
     resolution: {integrity: sha512-21cPiuGMoMZwiOHa2i4LXkMkMkCGzA+MVFV70jRwHo95dL4x/ts5GZhML1QWuy7yfp3WzK3lRvZi3JnXTYqrBw==}
 
-  abstract-pathfinder@https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/49c7d53d4fa332fbf4be7a0a605de47845061732:
-    resolution: {tarball: https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/49c7d53d4fa332fbf4be7a0a605de47845061732}
-    version: 0.1.0
+  abstract-pathfinder@0.1.0:
+    resolution: {integrity: sha512-ExABnpG3hZIXdZNO8gnRiXkGShc18PqnnJharMNnyqPcr1rb+NuI0Az4/efGFL9JAI7+ajJx5Qso8Yhp3BFYMQ==}
 
   acorn-walk@8.3.4:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
@@ -1886,7 +1885,7 @@ snapshots:
       loupe: 2.3.7
       pretty-format: 29.7.0
 
-  abstract-pathfinder@https://codeload.github.com/fenomas/abstract-pathfinder/tar.gz/49c7d53d4fa332fbf4be7a0a605de47845061732:
+  abstract-pathfinder@0.1.0:
     dependencies:
       ts-priority-queue: 0.1.1
 
