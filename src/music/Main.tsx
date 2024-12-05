@@ -1,24 +1,22 @@
-import { createSignal } from 'solid-js'
 import Generator from 'wasgen'
-import { playChords, playNotes } from './music'
+import { createSignal } from 'solid-js'
+import { beatDur, playOneBar } from './music'
 
-const [gen, setGen] = createSignal<any>(null)
 const [isPlaying, setPlaying] = createSignal(false)
 export const [pathStr, setPathStr] = createSignal('')
 
-const intervals: any[] = []
+let interval: any
+let gen: any
 
 const setupMusic = () => {
-  if (!gen()) setGen(new Generator())
+  if (!gen) gen = new Generator()
   if (!isPlaying()) {
-    playChords(gen())
-    intervals.push(setInterval(() => playChords(gen()), 1600))
-    intervals.push(setInterval(() => playNotes(gen()), 1600))
+    playOneBar(gen)
+    interval = setInterval(playOneBar, beatDur * 4 * 1000, gen)
     setPlaying(true)
   } else {
-    clearInterval(intervals.pop())
-    clearInterval(intervals.pop())
     setPlaying(false)
+    clearInterval(interval)
   }
 }
 
